@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Calcolatrice</title>
+<link rel="stylesheet" href="./CalcolatriceCSS.css"  />
+</head>
+<body>
+		<img  id="criceto" src="https://thumbs.gfycat.com/RaggedGorgeousAmphiuma.webp" style="width:55px;height:55px; display: block;display:none;margin-left: auto;margin-right: auto;"> <!---->
+		<h1  id="titolo">Calcolatrice </h1>	
+		
+		<div id="outputZone">
+		<pre>
+				<textarea id="testo" onkeypress="validate (event)"></textarea>				<!-- aggiungi criceto su icona andicappato -->
+<textarea  readonly id="risultato"></textarea></pre>
+		<!--<p id="risultato"></p> -->
+	</div>	
+	<div id="buttonsZone">	
+		<button id="1" type="button" onclick="numeroDaBottone(1)">1</button>
+		<button id="2" type="button" onclick="numeroDaBottone(2)">2</button>
+		<button id="3" type="button" onclick="numeroDaBottone(3)">3</button>
+		<button id="piu" class="segni" type="button" onclick="resetRisultato();numeroDaBottone('+')">+</button>
+		<button id="4" type="button" onclick="numeroDaBottone(4)">4</button>
+		<button id="5" type="button" onclick="numeroDaBottone(5)">5</button>
+		<button id="6" type="button" onclick="numeroDaBottone(6)">6</button>
+		<button id="meno" type="button" class="segni" onclick="resetRisultato();numeroDaBottone('-')">-</button>		
+		<button id="7" type="button" onclick="numeroDaBottone(7)">7</button>
+		<button id="8" type="button" onclick="numeroDaBottone(8)">8</button>
+		<button id="9" type="button" onclick="numeroDaBottone(9)">9</button>
+		<button id="per" type="button" class="segni" onclick="resetRisultato();numeroDaBottone('*')">*</button>
+		<button id="reset" type="button" onclick="numeroDaBottone('reset')">C</button>
+		<button id="0" type="button" onclick="numeroDaBottone(0)">0</button>	
+		<button id="punto" type="button" onclick="numeroDaBottone('.')">.</button>								
+		<button id="diviso" type="button" class="segni" onclick="resetRisultato();numeroDaBottone('/')">/</button>									
+	</div>
+			
+		
+		
+		
+		
+
+</body>
+<script src="./CalcolatriceJs.js"></script>
+</html>
